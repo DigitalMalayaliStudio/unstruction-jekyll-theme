@@ -1,0 +1,25 @@
+<br><small>Feel free to reach out to us.</small>
+<div slot="footer">
+    <sl-button-group label="Alignment">
+        {% if site.phone %}
+        <sl-button size="medium" circle href="tel:{{ site.phone }}">
+            <sl-icon name="telephone" label="Phone"></sl-icon>
+        </sl-button>
+        {% endif %}
+        {% if site.mail %}
+        <sl-button size="medium" circle href="mailto:{{ site.mail }}">
+            <sl-icon name="envelope" label="Mail"></sl-icon>
+        </sl-button>
+        {% endif %}
+        {% if site.whatsapp %}
+        <sl-button size="medium" circle href="https://wa.me/{{ site.whatsapp }}">
+            <sl-icon name="whatsapp" label="WhatsApp"></sl-icon>
+        </sl-button>
+        {% endif %}
+        {% if site.location %}
+        <sl-button size="medium" circle href="{{ site.location }}" target="_blank">
+            <sl-icon name="geo-alt" label="Map"></sl-icon>
+        </sl-button>
+        {% endif %}
+    </sl-button-group>
+</div>

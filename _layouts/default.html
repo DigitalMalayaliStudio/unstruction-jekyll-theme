@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This website is under construction. Please check back later.">
+    <meta property="og:title" content="{{ site.name }} - Under Construction">
+    <meta property="og:description"
+        content="This website is under construction. Please check back later.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.image }}">
+    <title>{{ site.name }} - Under Construction</title>
+    <link rel="icon" href="{{ site.favicon }}" type="image/svg+xml">
+    <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/dist/utilities/shoelace.js"
+        data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/"></script>
+    <link rel="stylesheet" media="(prefers-color-scheme:light)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css" />
+    <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css"
+        onload="document.documentElement.classList.add('sl-theme-dark');" />     
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/card/card.js"></script>
+        {% if site.phone or site.mail or site.whatsapp or site.location %}
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/button/button.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/icon/icon.js"></script>
+        <style>
+            .card-overview small{ color: var(--sl-color-neutral-700);} .card-overview [slot='footer']{ display: flex; justify-content: space-between; align-items: center;} sl-button::part(base){ color: var(--sl-color-gray-50); background-color: var(--theme-color-600); border-color: var(--theme-color-300);} sl-button::part(base):hover{ background-color: var(--theme-color-500);}
+        </style>
+        {% endif %}
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/icon-button/icon-button.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/button-group/button-group.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/badge/badge.js"></script>
+    <style>
+        :root {
+            --theme-color-300: var(--sl-color-{{ site.color | downcase }}-300);
+            --theme-color-500: var(--sl-color-{{ site.color | downcase }}-500);
+            --theme-color-600: var(--sl-color-{{ site.color | downcase }}-600);
+        }
+        body{ min-height: 100dvh; display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: var(--sl-font-sans); line-height: var(--sl-line-height-normal);} .card-overview{ max-width: 350px;} sl-badge::part(base){ background-color: var(--theme-color-600); --pulse-color: var(--theme-color-600);} sl-icon-button::part(base):hover{ color: var(--theme-color-600);} .copyright{ color: var(--sl-color-neutral-600); text-align: center; margin-top: 2rem;} .copyright a{ color: var(--theme-color-600);}
+    </style>
+</head>
+
+<body>
+    <sl-card class="card-overview">
+        <img slot="image" src="assets/preview.webp" alt="{{ site.name }} - Under Construction" width="350">
+        <strong>Unstruction</strong><br>
+        This website is under construction.
+        {% if site.date %}
+        <br>Please check back later in <sl-badge pill pulse
+            class="days"></sl-badge> days, <sl-badge pill pulse class="hr"></sl-badge> hours, <sl-badge
+            pill pulse class="min"></sl-badge> minutes and <sl-badge pill pulse
+            class="sec"></sl-badge> seconds!
+            <script>
+                const id=setInterval(timer, 1000); function timer(){ const target=new Date('{{ site.date}}').getTime(); const current=new Date().getTime(); const diff=target - current; const s=1000; const m=s * 60; const h=m * 60; const d=h * 24; let days=Math.floor(diff / d); let hr=Math.floor((diff % d) / h); let min=Math.floor((diff % h) / m); let sec=Math.floor((diff % m) / s); document.querySelector('.days').textContent=days; document.querySelector('.hr').textContent=hr; document.querySelector('.min').textContent=min; document.querySelector('.sec').textContent=sec; if (diff <=0){ clearInterval(id); document.querySelector('.days').textContent='0'; document.querySelector('.hr').textContent='0'; document.querySelector('.min').textContent='0'; document.querySelector('.sec').textContent='0';}} timer();
+            </script>
+        {% else %}
+        <br>Please check back later!
+        {% endif %}
+        {% if site.phone or site.mail or site.whatsapp or site.location %}
+        {% include contacts.html %}
+        {% endif %}
+    </sl-card>
+
+    <small class="copyright"><sl-icon-button name="github" label="Settings" style="font-size: 1.2rem;"
+            href="https://github.com/digitalmalayalistudio/unstruction-jekyll-theme/"
+            target="_blank"></sl-icon-button><br>Unstruction v{{ theme.version }} by
+        <a href="http://studio.digitalmalayali.in/">Digital Malayali Studio</a><br>
+        © {{ "now" | date: "%Y" }} {{ site.name }}</small>
+</body>

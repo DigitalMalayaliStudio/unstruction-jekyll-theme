@@ -1,0 +1,27 @@
+# Jekyll
+theme: unstruction-jekyll-theme
+
+# Site Configuration
+name: Unstruction  # Name of your website
+favicon: assets/favicon.svg # SVG favicon of your website
+url: https://digitalmalayalistudio.github.io/linkhub-jekyll-theme # URL of your website
+image: assets/preview.webp # Also used for SEO (og:image)
+color: orange # Preferred theme color based on the Shoelace color tokens. Visit https://shoelace.style/tokens/color#theme-tokens.
+date: Jan 1, 3000, 00:00:00 # Set the planned launch date and time in an ISO 8601 format or use the format shown in the example. Time is optional. Remove this variable if you don't need a countdown. 
+
+# Contacts
+phone: +91123456789 #Remove any that are not needed
+mail: mail@example.com
+whatsapp: 91123456789
+location: https://maps.google.com/location
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"    
+
+# Exclude
+exclude: [README.md, Gemfile.lock, .jekyll-cache/, .github/, CHANGELOG.md, Gemfile, LICENSE.txt, funding.yml, unstruction-jekyll-theme.gemspec]
