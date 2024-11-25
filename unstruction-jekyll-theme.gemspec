@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "unstruction-jekyll-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Digital Malayali Studio"]
   spec.email         = ["studio@digitalmalayali.in"]
 

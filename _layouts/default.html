@@ -50,8 +50,8 @@
 
 <body>
     <sl-card class="card-overview">
-        <img slot="image" src="assets/preview.webp" alt="{{ site.name }} - Under Construction" width="350">
-        <strong>Unstruction</strong><br>
+        <img slot="image" src="{{ site.image }}" alt="{{ site.name }} - Under Construction" width="350">
+        <strong>{{ site.name }}</strong><br>
         This website is under construction.
         {% if site.date %}
         <br>Please check back later in <sl-badge pill pulse
