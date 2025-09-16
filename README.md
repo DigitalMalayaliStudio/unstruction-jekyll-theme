@@ -7,6 +7,7 @@
 [![Gem Total Downloads](https://img.shields.io/gem/dt/unstruction-jekyll-theme?logo=rubygems&logoColor=white&labelColor=%23E9573F&color=grey)](https://rubygems.org/gems/unstruction-jekyll-theme)
 
 [![Static Badge](https://img.shields.io/badge/html-template-grey?logo=html5&logoColor=white&labelColor=E34F26)](https://github.com/digitalmalayalistudio/unstruction)
+[![Static Badge](https://img.shields.io/badge/wordpress-theme-grey?logo=wordpress&labelColor=21759B)](https://github.com/DigitalMalayaliStudio/unstruction-wordpress-theme)
 
 [![Static Badge](https://img.shields.io/badge/liberapay-donate-F6C915?logo=liberapay)](https://liberapay.com/zcraber)
 
