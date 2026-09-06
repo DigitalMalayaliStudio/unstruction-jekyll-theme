@@ -2,7 +2,7 @@
 
 # Unstruction
 
-[![Static Badge](https://img.shields.io/badge/jekyll-~%3E%204.3-grey?logo=jekyll&labelColor=%23CC0000)](https://jekyllrb.com)
+[![Static Badge](https://img.shields.io/badge/jekyll-~%3E%204.4-grey?logo=jekyll&labelColor=%23CC0000)](https://jekyllrb.com)
 [![Gem Version](https://img.shields.io/gem/v/unstruction-jekyll-theme?logo=rubygems&logoColor=white&labelColor=%23E9573F&color=grey)](https://rubygems.org/gems/unstruction-jekyll-theme)
 [![Gem Total Downloads](https://img.shields.io/gem/dt/unstruction-jekyll-theme?logo=rubygems&logoColor=white&labelColor=%23E9573F&color=grey)](https://rubygems.org/gems/unstruction-jekyll-theme)
 
