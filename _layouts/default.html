@@ -52,7 +52,11 @@
     <sl-card class="card-overview">
         <img slot="image" src="{{ site.image }}" alt="{{ site.name }} - Under Construction" width="350">
         <strong>{{ site.name }}</strong><br>
+        {% if site.maintenance == true %}
+        This website is undergoing maintenance.
+        {% else %}
         This website is under construction.
+        {% endif %}
         {% if site.date %}
         <br>Please check back later in <sl-badge pill pulse
             class="days"></sl-badge> days, <sl-badge pill pulse class="hr"></sl-badge> hours, <sl-badge

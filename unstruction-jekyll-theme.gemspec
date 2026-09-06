@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "unstruction-jekyll-theme"
-  spec.version       = "0.1.1"
+  spec.version       = "0.1.2"
   spec.authors       = ["Digital Malayali Studio"]
   spec.email         = ["studio@digitalmalayali.in"]
 
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|LICENSE|README|_config\.yml)!i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 4.3"
+  spec.add_runtime_dependency "jekyll", "~> 4.4"
 
-  spec.add_development_dependency "bundler", "~> 2.4"
+  spec.add_development_dependency "bundler", "~> 4.0"
 end

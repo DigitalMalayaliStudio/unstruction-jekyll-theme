@@ -81,7 +81,7 @@ Or install it yourself as:
 ## Configuration
 Unstruction is super-easy to customize! There is only one `layout` and that is [default.html](_layouts/default.html).
 
-Edit the [_config.yml](_config.yml) file to add your website's name, favicon, image, color theme, launch date and contact details. 
+Edit the [_config.yml](_config.yml) file to add your website's name, favicon, image, color theme, launch date and contact details. After customizing, add `ignore_theme_config: true` to prevent your settings from being overwritten by the theme's default config.
 
 ### `_config.yml`
 ```yml
@@ -94,7 +94,8 @@ favicon: assets/favicon.svg # SVG favicon of your website
 url: https://digitalmalayalistudio.github.io/linkhub-jekyll-theme # URL of your website
 image: assets/preview.webp # Also used for SEO (og:image)
 color: orange # Preferred theme color based on the Shoelace color tokens. Visit https://shoelace.style/tokens/color#theme-tokens.
-date: Jan 1, 3000, 00:00:00 # Set the planned launch date and time in an ISO 8601 format or use the format shown in the example. Time is optional. Remove this variable if you don't need a countdown. 
+date: Jan 1, 3000, 00:00:00 # Set the planned launch date and time in an ISO 8601 format or use the format shown in the example. Time is optional. Remove this variable if you don't need a countdown.
+maintenance: false # Set true to enable maintenance mode 
 
 # Contacts
 phone: +91123456789 #Remove any that are not needed
