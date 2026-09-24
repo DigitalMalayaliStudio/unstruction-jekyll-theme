@@ -14,30 +14,30 @@
     <meta property="og:image" content="{{ site.url }}/{{ site.image }}">
     <title>{{ site.name }} - Under Construction</title>
     <link rel="icon" href="{{ site.favicon }}" type="image/svg+xml">
-    <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/dist/utilities/shoelace.js"
-        data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/dist/utilities/shoelace.js"
+        data-shoelace="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/dist/"></script>
     <link rel="stylesheet" media="(prefers-color-scheme:light)"
-        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/light.css" />
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/light.css" />
     <link rel="stylesheet" media="(prefers-color-scheme:dark)"
-        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/themes/dark.css"
+        href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/themes/dark.css"
         onload="document.documentElement.classList.add('sl-theme-dark');" />     
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/card/card.js"></script>
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/card/card.js"></script>
         {% if site.phone or site.mail or site.whatsapp or site.location %}
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/button/button.js"></script>
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/button/button.js"></script>
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/icon/icon.js"></script>
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/icon/icon.js"></script>
         <style>
             .card-overview small{ color: var(--sl-color-neutral-700);} .card-overview [slot='footer']{ display: flex; justify-content: space-between; align-items: center;} sl-button::part(base){ color: var(--sl-color-gray-50); background-color: var(--theme-color-600); border-color: var(--theme-color-300);} sl-button::part(base):hover{ background-color: var(--theme-color-500);}
         </style>
         {% endif %}
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/icon-button/icon-button.js"></script>
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/icon-button/icon-button.js"></script>
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/button-group/button-group.js"></script>
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/button-group/button-group.js"></script>
     <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.18.0/cdn/components/badge/badge.js"></script>
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.20.1/cdn/components/badge/badge.js"></script>
     <style>
         :root {
             --theme-color-300: var(--sl-color-{{ site.color | downcase }}-300);
